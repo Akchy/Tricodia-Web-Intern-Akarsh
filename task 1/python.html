@@ -1,19 +1,150 @@
 <html>
 <head>
 <title>Learn The Basics</title>
-</head>
-<body style="background-color:black;">
+<style>
 
-<p style="color:orange" align="center"><font size="7"><u>Python language</u></font></p>
-<p><br/></p>
-<p style="color:yellow" align="justify"><font size="6.5">Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.menu {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.menu-right {
+  float: right;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background: linear-gradient(red, yellow);;
+    padding: 1px;
+	text-align: center;
+    font-size: 200%;
+    color: black;
+}
+h1 {
+    font-size: 40px;
+}
+
+p {
+	font-size:30px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+	font-size:30px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+article {
+    
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(red, yellow);
+    height: auto; 
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    
+}
+
+
+
+/* Style the footer */
+footer {
+    
+	background-color: black;
+    padding: 0.5px;
+    text-align: center;
+    color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Learn The Basics</h2>
+</header>
+
+<section>
+ 
+<div class="menu">
+  <a href="index.html">Home</a>
+  <a href="c.html">C language</a>
+  <a href="cpp.html">C++ Language</a>
+  <a class="active" href="python.html">Python</a>
+<div class="menu-right">
+    <a href="about.html">About</a>
+</div>
+</div>
+  
+	<article>
+    <h1>Python Language</h1>
+
+    <p> Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.
 
 Python features a dynamic type system and automatic memory management. It supports multiple programming paradigms, including object-oriented, imperative, functional and procedural, and has a large and comprehensive standard library.
 <br/><br/>
-Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.</font></p>
-<br/>
-<p style="color:yellow" ><font size="6.5">Go to <a href="index.html" style="color:#00FF00" >Main Page</a> , <a href="c.html" style="color:#00FF00" >C language</a> , <a href="cpp.html" style="color:#00FF00" >C++ language</a> .
-<a href="index.html" style="color:#00FF00" ></a></font></p>
+Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.</p>
+
+<p>Some Screenshots</p>
+<img src="pic/python.jpg" alt="C example 1" width="400" height="400">
+<img src="pic/python2.png" alt="C example 1" width="400" height="400">
+<img src="pic/python3.jpg" alt="C example 1" width="400" height="400">
+
+<p>Simple functions are: </p>
+<ul>
+	<li>print</li>
+	<li>raw_input</li>
+	<li>for</li>
+	<li>while</li>
+	<li>else</li>
+</ul>
+ </article>
+</section>
+
+<footer>
+  <p>Done By DRC</p>
+</footer>
 
 </body>
 </html>

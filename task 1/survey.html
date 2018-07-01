@@ -72,7 +72,16 @@ p {
 	font-family: "Times New Roman", Times, serif;
 }
 input {
-	font-size:20px;
+	font-size:30px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+select {
+	font-size:30px;
+	font-family: "Times New Roman", Times, serif;
+}
+form {
+	font-size:30px;
 	font-family: "Times New Roman", Times, serif;
 }
 
@@ -80,6 +89,7 @@ article {
     
     padding: 20px;
     width: 100%;
+ 
     background: linear-gradient(red, yellow);
     height: auto; 
 }
@@ -113,7 +123,7 @@ footer {
 <section>
  
 <div class="menu">
-  <a class="active" href="index.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="c.html">C language</a>
   <a href="cpp.html">C++ Language</a>
   <a href="python.html">Python</a>
@@ -123,21 +133,37 @@ footer {
 </div>
   
   <article>
-    
-    <p> The main aim of this youtube channel is to teach some basic knowledge of languages. <br/><br/>
-This channel was created on 25/06/18 and till now,there are videos of the basics of C, C++ and python.</p>
-<img src="pic/logo.png"  class="center" alt="Logo">
-<p> Visit My Channel in youtube at: <a href="https://www.youtube.com/channel/UCWGT6fcvMaetgKNc9_ZydVw?view_as=subscriber"> here</a></p>
-<p>We are conducting a survey, this survey is for better understanding of our viewers, please feel free to fill to form, no verification required. <br/>
-<br/>Click the below link  &#9759; :
-<form action="survey.html">
-    <input type="submit" value="Take a Quick Survey" />
-</form>
-</p><br>
-<p>Here is the Syllabus of our channel:</p><br>
-<iframe src="syllabus.pdf" width=800 height=600 class="center">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+
+	<h1 align="center"> <u>Survey</u> </h1>
+    <form action="thankyou.html" method="post">
+	
+	<ol>	
+	<li>Full name:<br><input type="text" name="firstname" >
+	</li><br><br>
+	<li>Gender:<br>
+	<input type="radio" name="gender" value="male" checked> Male &#9794;<br>
+	<input type="radio" name="gender" value="female"> Female &#9792;<br>
+	<input type="radio" name="gender" value="other"> Other  <br><br></li>
+	<li>Do you know any of the following language: 
+	<ul>
+	<li>C</li> 
+	<li>C++</li> 
+	<li>Python</li></ul>
+	Select Yes or no:
+	<input type="radio" name="lang" value="Yes"> Yes
+	<input type="radio" name="lang" value="No" checked> No<br><br></li>
+	<li>Select your country:<br>
+	<select>
+		<option value="ind">India</option>
+		<option value="usa">United States</option>
+		<option value="uk">United Kingdom</option>
+		<option value="au">Australia</option>
+		<option value="other">Other</option>
+	</select></li><br><br>
+
+	<input type="submit" value="Submit">
+</form> 
+
 
  </article>
 </section>

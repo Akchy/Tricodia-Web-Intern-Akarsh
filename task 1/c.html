@@ -1,20 +1,145 @@
 <html>
 <head>
 <title>Learn The Basics</title>
-</head>
-<body style="background-color:black;">
+<style>
 
-<p style="color:orange" align="center"><font size="7"><u>C language</u></font></p>
-<p><br/></p>
-<p style="color:yellow" align="justify"><font size="6.5">C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion. By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in assembly language, including operating systems, as well as various application software for computers ranging from supercomputers to embedded systems.
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.menu {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.menu-right {
+  float: right;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background: linear-gradient(red, yellow);;
+    padding: 1px;
+	text-align: center;
+    font-size: 200%;
+    color: black;
+}
+h1 {
+    font-size: 40px;
+}
+
+p {
+	font-size:30px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+	font-size:30px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+article {
+    
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(red, yellow);
+    height: auto; 
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    
+}
+
+/* Style the footer */
+footer {
+    background-color: black;
+    padding: 0.5px;
+    text-align: center;
+    color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Learn The Basics</h2>
+</header>
+
+<section>
+ 
+<div class="menu">
+  <a href="index.html">Home</a>
+  <a class="active" href="c.html">C language</a>
+  <a href="cpp.html">C++ Language</a>
+  <a href="python.html">Python</a>
+<div class="menu-right">
+    <a href="about.html">About</a>
+</div>
+</div>
+  
+	<article>
+    <h1>C Language</h1>
+
+    <p> C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion. By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in assembly language, including operating systems, as well as various application software for computers ranging from supercomputers to embedded systems.
 <br/><br/>
 C was originally developed by Dennis Ritchie between 1969 and 1973 at Bell Labs, and used to re-implement the Unix operating system. It has since become one of the most widely used programming languages of all time, with C compilers from various vendors available for the majority of existing computer architectures and operating systems. C has been standardized by the American National Standards Institute (ANSI) since 1989 (see ANSI C) and subsequently by the International Organization for Standardization (ISO).
-</font></p>
+</p>
 
-<br/>
-<p style="color:yellow" ><font size="6.5">Go to <a href="index.html" style="color:#00FF00" >Main Page</a>, <a href="cpp.html" style="color:#00FF00" >C++ language</a>, <a href="python.html" style="color:#00FF00" >Python</a> .
-<a href="index.html" style="color:#00FF00" ></a></font></p>
+<p>Some Screenshots</p>
+<img src="pic/c.jpg" alt="C example 1" width="400" height="400">
+<img src="pic/c2.jpg" alt="C example 1" width="400" height="400">
+<img src="pic/c3.jpg" alt="C example 1" width="400" height="400">
+<p>Simple functions are: </p>
+<ul>
+	<li>printf</li>
+	<li>scanf</li>
+	<li>strlen</li>
+	<li>puts</li>
+	<li>gets</li>
+</ul>
 
+</article>
+</section>
+
+<footer>
+  <p>Done By DRC</p>
+</footer>
 
 </body>
 </html>

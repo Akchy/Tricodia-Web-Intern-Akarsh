@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
   <title>Book Master</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -381,7 +382,7 @@
         <div class="panel-footer">
           <h3>$10</h3>
           <h4>per month</h4>
-          <a href="signup.html"><button class="btn btn-lg">Sign Up</button></a>
+          <a href="signup.html"><button class="btn btn-lg" onclick="basic()">Sign Up</button></a>
         </div>
       </div>      
     </div>     
@@ -398,7 +399,7 @@
         <div class="panel-footer">
           <h3>$40</h3>
           <h4>per month</h4>
-          <a href="signup.html"><button class="btn btn-lg" onclick="save()" >Sign Up</button></a>
+          <a href="signup.html"><button class="btn btn-lg" onclick="pro()" >Sign Up</button></a>
         </div>
       </div>      
     </div>       
@@ -414,13 +415,23 @@
         <div class="panel-footer">
           <h3>$75</h3>
           <h4>per month</h4>
-          <a href="signup.html"><button class="btn btn-lg">Sign Up</button></a>
+          <a href="signup.html"><button class="btn btn-lg" onclick="prem()">Sign Up</button></a>
         </div>
       </div>      
     </div>    
   </div>
 </div>
-
+<script>
+function basic(){
+localStorage.setItem("key", "10");
+}
+function pro(){
+localStorage.setItem("key", "40");
+}
+function prem(){
+localStorage.setItem("key", "75");
+}
+</script>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">

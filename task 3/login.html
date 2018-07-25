@@ -7,14 +7,36 @@
     <title>Login In</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./css/bm.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
     <link href="./css/signin.css" rel="stylesheet">
 
   <body class="text-center">
-    <form class="form-signin" action="error.html">
-      <a href="index.html"><img class="d-block mx-auto mb-4" src="./pics/BookMaster.jpg" alt="" width="200dp" height="auto"></a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Book Master</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li onclick="basic()"><a href="signup.html">SIGN UP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+function basic(){
+localStorage.setItem("key", "10");
+}
+</script>
+	<form class="form-signin" action="error.html">
+      <img class="d-block mx-auto mb-4" src="./pics/BookMaster.jpg" alt="" width="200dp" height="auto">
         <h1 class="h3 mb-3 font-weight-normal">Please log in</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus="">
@@ -26,10 +48,7 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit" >Log in</button>
-      <p class="mt-5 mb-3 text-muted">Book Master</p>
     </form>
-  <script>
-
-</script>
+     
 
 </body></html>

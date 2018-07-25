@@ -5,10 +5,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Checkout example for Bootstrap</title>
+    <title>Checkout Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bms.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
     <link href="./css/form-validation.css" rel="stylesheet">
@@ -16,9 +17,16 @@
   <body class="bg-light">
   
 
+  <nav class="navbar navbar-default navbar-fixed-top ">
+  <div class="container">
+      <a class="navbar-brand navbar-right" href="index.html">Book Master</a>
+  </div>
+</nav>
+  
+  
     <div class="container">
       <div class="py-5 text-center">
-        <a href="index.html"><img class="d-block mx-auto mb-4" src="./pics/BookMaster.jpg" alt="" width="200dp" height="auto"></a>
+        <img class="d-block mx-auto mb-4" src="./pics/BookMaster.jpg" alt="" width="200dp" height="auto" style="margin-top:50px">
         <h2>Checkout form</h2>
          </div>
 
@@ -42,7 +50,7 @@
 <script>
   
   var value=localStorage.getItem("key");
-  var num = parseInt(name);
+  var num = parseInt(value);
   if(num==10){
   var name="Basic Pack" }
   else if(num==40){
